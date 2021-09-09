@@ -13,7 +13,7 @@ Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse
 ## Planned Features
 * Customised User Interface based on running platform (android or ios)
 * Fully functional navigation: profile, saved articles and home
-* User Authentication (Login and signup)
+* User Authentication
 * Users can save articles to the Saved Articles page
 * View articles added on a past day
 

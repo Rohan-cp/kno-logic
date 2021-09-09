@@ -3,16 +3,25 @@
   <img src="https://imgur.com/P2nDq7b.png" width="180">
 </p>
 
-Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse, curated articles for lifelong learners. This app was built with [React Native](https://reactnative.dev/) and [Expo](https://expo.io/).
+Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse, curated articles for lifelong learners. This app was built with [React Native](https://reactnative.dev/) and [Expo](https://expo.io/). We plan on publishing to App Store and Android Store soon.
 
 ## Screenshots
+<img src="https://imgur.com/SxWoD8S.png" width="50%" height="50%" /> <img src="https://imgur.com/lpib2c0.jpg" width="60%" height="60%" /> 
+<img src="https://imgur.com/gnntVKW.png" width="70%" height="70%" /> <img src="https://imgur.com/ERzrHPK.png" width="80%" height="80%" />
 
 ## Planned Features
 * Customised User Interface based on running platform (android or ios)
 * Fully functional navigation: profile, saved articles and home
-* Login and signup
-* Comment and/or like a an article
+* User Authentication (Login and signup)
+* Users can save articles to the Saved Articles page
 * View articles added on a past day
+
+## Planned Features
+* Add push notification when new daily digest arrives
+* Generate shareable links
+* Welcome Page
+* Comment on and/or like a an article
+* In built color averager from image to determine color of article's category
 
 ## Developing locally
 If you'd like to play around with the code:
@@ -27,8 +36,5 @@ npm install
 
 # server with hot reload at localhost (press 'r' to reload if changes not reflected)
 npm start
-
-# building for production
-npm run build
 ```
 

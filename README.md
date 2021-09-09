@@ -6,8 +6,8 @@
 Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse, curated articles for lifelong learners. This app was built with [React Native](https://reactnative.dev/) and [Expo](https://expo.io/). We plan on publishing to App Store and Android Store soon.
 
 ## Screenshots
-<img src="https://imgur.com/SxWoD8S.png" width="30%" height="30%" /> <img src="https://imgur.com/lpib2c0.jpg" width="30%" height="30%" /> 
-<img src="https://imgur.com/gnntVKW.png" width="30%" height="30%" /> <img src="https://imgur.com/ERzrHPK.png" width="30%" height="30%" />
+<img src="https://imgur.com/SxWoD8S.png" width="25%" height="25%" /> <img src="https://imgur.com/lpib2c0.jpg" width="25%" height="25%" /> 
+<img src="https://imgur.com/gnntVKW.png" width="25%" height="25%" /> <img src="https://imgur.com/ERzrHPK.png" width="25%" height="25%" />
 
 ## Planned Features
 * Customised User Interface based on running platform (android or ios)

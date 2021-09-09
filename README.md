@@ -8,8 +8,7 @@ Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse
 ## Screenshots
 <img src="https://imgur.com/SxWoD8S.png" width="30%" height="30%" /> <img src="https://imgur.com/lpib2c0.jpg" width="30%" height="30%" /> 
 <img src="https://imgur.com/gnntVKW.png" width="30%" height="30%" />
-
-<img src="https://gfycat.com/repentantopenharvestmen.gif"/>
+![](https://gfycat.com/repentantopenharvestmen.gif)
 
 ## Planned Features
 * Customised User Interface based on running platform (android or ios)

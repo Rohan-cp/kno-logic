@@ -3,7 +3,7 @@
   <img src="https://imgur.com/P2nDq7b.png" width="180">
 </p>
 
-Kno-logic is a mobile learning platform with a short number of curated articles added daily for lifelong learners. This app was built with [React Native](https://reactnative.dev/) and [Expo](https://expo.io/).
+Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse, curated articles for lifelong learners. This app was built with `React Native`(https://reactnative.dev/) and [Expo](https://expo.io/).
 
 ## Screenshots
 

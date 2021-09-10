@@ -11,7 +11,7 @@ Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse
   <img src="https://imgur.com/gnntVKW.png" width="30%" height="30%" />
 </p>
 
-## Planned Features
+## Working Features
 * Customised User Interface based on running platform (android or ios)
 * Fully functional navigation: profile, saved articles and home
 * User Authentication
@@ -20,9 +20,12 @@ Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse
 
 ## Planned Features
 * Add push notification when new daily digest arrives
+* App Widget
 * Generate shareable links
+* User Submission (to suggest articles)
 * Welcome Page
 * Comment on and/or like a an article
+* Dark Mode
 * In built color averager from image to determine color of article's category
 
 ## Developing locally

@@ -39,7 +39,8 @@ npm install --global expo-cli
 # install dependencies
 npm install
 
-# server with hot reload at localhost (press 'r' to reload if changes not reflected) and make sure to turn off production mode on expo page
+# server with hot reload at localhost (press 'r' to reload if changes not reflected) and make sure
+# to turn off production mode on expo page
 npm start
 ```
 

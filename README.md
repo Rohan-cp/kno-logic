@@ -24,7 +24,7 @@ Kno-logic is a cross-platform mobile app that delivers a daily digest of diverse
 * Generate shareable links
 * User Submission (to suggest articles)
 * Welcome Page
-* Comment on and/or like a an article
+* Comment on and/or like an article
 * Dark Mode
 * In built color averager from image to determine color of article's category
 

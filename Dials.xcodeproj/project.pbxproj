@@ -15,6 +15,9 @@
 		1128C6542BA965D700AB0F9B /* DSArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6532BA965D700AB0F9B /* DSArticle.swift */; };
 		1128C6572BA966A600AB0F9B /* DSDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6562BA966A600AB0F9B /* DSDailyViewController.swift */; };
 		1128C6592BA966C900AB0F9B /* DSSavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6582BA966C900AB0F9B /* DSSavedViewController.swift */; };
+		1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65A2BA9843F00AB0F9B /* DSService.swift */; };
+		1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65C2BA9845500AB0F9B /* DSRequest.swift */; };
+		1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1128C6532BA965D700AB0F9B /* DSArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticle.swift; sourceTree = "<group>"; };
 		1128C6562BA966A600AB0F9B /* DSDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSDailyViewController.swift; sourceTree = "<group>"; };
 		1128C6582BA966C900AB0F9B /* DSSavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSavedViewController.swift; sourceTree = "<group>"; };
+		1128C65A2BA9843F00AB0F9B /* DSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSService.swift; sourceTree = "<group>"; };
+		1128C65C2BA9845500AB0F9B /* DSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRequest.swift; sourceTree = "<group>"; };
+		1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +72,20 @@
 				1128C64F2BA9653000AB0F9B /* Controllers */,
 				1128C64E2BA9652B00AB0F9B /* Models */,
 				1128C64D2BA9652400AB0F9B /* Views */,
-				1128C64C2BA9651A00AB0F9B /* APIClients */,
+				1128C64C2BA9651A00AB0F9B /* APIClient */,
 				1128C6462BA963AF00AB0F9B /* Info.plist */,
 			);
 			path = Dials;
 			sourceTree = "<group>";
 		};
-		1128C64C2BA9651A00AB0F9B /* APIClients */ = {
+		1128C64C2BA9651A00AB0F9B /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				1128C65A2BA9843F00AB0F9B /* DSService.swift */,
+				1128C65C2BA9845500AB0F9B /* DSRequest.swift */,
+				1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */,
 			);
-			path = APIClients;
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		1128C64D2BA9652400AB0F9B /* Views */ = {
@@ -209,10 +218,13 @@
 			files = (
 				1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */,
 				1128C6542BA965D700AB0F9B /* DSArticle.swift in Sources */,
+				1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */,
+				1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */,
 				1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */,
 				1128C6592BA966C900AB0F9B /* DSSavedViewController.swift in Sources */,
 				1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */,
 				1128C6572BA966A600AB0F9B /* DSDailyViewController.swift in Sources */,
+				1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

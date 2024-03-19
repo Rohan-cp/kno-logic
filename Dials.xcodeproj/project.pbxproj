@@ -18,6 +18,7 @@
 		1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65A2BA9843F00AB0F9B /* DSService.swift */; };
 		1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65C2BA9845500AB0F9B /* DSRequest.swift */; };
 		1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */; };
+		1128C6612BAA36F200AB0F9B /* DSCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6602BAA36F200AB0F9B /* DSCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1128C65A2BA9843F00AB0F9B /* DSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSService.swift; sourceTree = "<group>"; };
 		1128C65C2BA9845500AB0F9B /* DSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRequest.swift; sourceTree = "<group>"; };
 		1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEndpoint.swift; sourceTree = "<group>"; };
+		1128C6602BAA36F200AB0F9B /* DSCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1128C6532BA965D700AB0F9B /* DSArticle.swift */,
+				1128C6602BAA36F200AB0F9B /* DSCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				1128C6542BA965D700AB0F9B /* DSArticle.swift in Sources */,
 				1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */,
 				1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */,
+				1128C6612BAA36F200AB0F9B /* DSCategory.swift in Sources */,
 				1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */,
 				1128C6592BA966C900AB0F9B /* DSSavedViewController.swift in Sources */,
 				1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */,

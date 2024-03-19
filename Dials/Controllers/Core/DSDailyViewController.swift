@@ -12,8 +12,20 @@ final class DSDailyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .systemBackground
         title = "Daily"
+        
+        
+        let request = DSRequest(endpoint: .articles)
+        print(request.url)
+        
+        DSService.shared.execute(request, expecting: DSArticle.self) { result in
+            switch result {
+            case .success:
+                break
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
     }
 }

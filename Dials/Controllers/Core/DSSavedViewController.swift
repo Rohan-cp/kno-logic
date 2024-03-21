@@ -10,7 +10,7 @@ import UIKit
 // Controller to show saved articles
 final class DSSavedViewController: UIViewController {
     
-    private let articleListView = ArticleListView()
+    private let articleListView = DSArticleListView()
 
     override func viewDidLoad() {
         super.viewDidLoad()

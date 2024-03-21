@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ArticlesDetailViewViewModel: NSObject {
+final class DSArticlesDetailViewViewModel: NSObject {
     func fetchSavedArticles() {
         DSService.shared.execute(.articlesRequests, expecting: DSGetArticlesResponse.self) { result in
             switch result {
@@ -20,7 +20,7 @@ final class ArticlesDetailViewViewModel: NSObject {
     }
 }
 
-extension ArticlesDetailViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension DSArticlesDetailViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }

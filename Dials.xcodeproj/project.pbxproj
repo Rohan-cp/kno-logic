@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1117092B2BABC5B100CEF7DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092A2BABC5B100CEF7DE /* Extensions.swift */; };
 		1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6382BA963AE00AB0F9B /* AppDelegate.swift */; };
 		1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */; };
 		1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63C2BA963AE00AB0F9B /* DSTabBarController.swift */; };
@@ -19,9 +20,13 @@
 		1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65C2BA9845500AB0F9B /* DSRequest.swift */; };
 		1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */; };
 		1128C6612BAA36F200AB0F9B /* DSCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6602BAA36F200AB0F9B /* DSCategory.swift */; };
+		1128C6652BAA5CDA00AB0F9B /* DSGetArticlesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6642BAA5CD900AB0F9B /* DSGetArticlesResponse.swift */; };
+		1128C6672BAA608A00AB0F9B /* ArticlesListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6662BAA608A00AB0F9B /* ArticlesListViewViewModel.swift */; };
+		1128C6692BAA60BD00AB0F9B /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6682BAA60BD00AB0F9B /* ArticleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1117092A2BABC5B100CEF7DE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1128C6352BA963AE00AB0F9B /* Dials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1128C6382BA963AE00AB0F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		1128C65C2BA9845500AB0F9B /* DSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRequest.swift; sourceTree = "<group>"; };
 		1128C65E2BA984C600AB0F9B /* DSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEndpoint.swift; sourceTree = "<group>"; };
 		1128C6602BAA36F200AB0F9B /* DSCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCategory.swift; sourceTree = "<group>"; };
+		1128C6642BAA5CD900AB0F9B /* DSGetArticlesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGetArticlesResponse.swift; sourceTree = "<group>"; };
+		1128C6662BAA608A00AB0F9B /* ArticlesListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListViewViewModel.swift; sourceTree = "<group>"; };
+		1128C6682BAA60BD00AB0F9B /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 		1128C64D2BA9652400AB0F9B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1128C6682BAA60BD00AB0F9B /* ArticleListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,6 +109,8 @@
 		1128C64E2BA9652B00AB0F9B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1128C6632BAA5CAA00AB0F9B /* APIResponseTypes */,
+				1128C6622BAA5CA200AB0F9B /* DataTypes */,
 				1128C6532BA965D700AB0F9B /* DSArticle.swift */,
 				1128C6602BAA36F200AB0F9B /* DSCategory.swift */,
 			);
@@ -117,6 +128,7 @@
 		1128C6502BA9653A00AB0F9B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1128C6662BAA608A00AB0F9B /* ArticlesListViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -135,6 +147,7 @@
 				1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */,
 				1128C6412BA963AF00AB0F9B /* Assets.xcassets */,
 				1128C6432BA963AF00AB0F9B /* LaunchScreen.storyboard */,
+				1117092A2BABC5B100CEF7DE /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -147,6 +160,21 @@
 				1128C6582BA966C900AB0F9B /* DSSavedViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		1128C6622BAA5CA200AB0F9B /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		1128C6632BAA5CAA00AB0F9B /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				1128C6642BAA5CD900AB0F9B /* DSGetArticlesResponse.swift */,
+			);
+			path = APIResponseTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,15 +248,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */,
+				1128C6652BAA5CDA00AB0F9B /* DSGetArticlesResponse.swift in Sources */,
 				1128C6542BA965D700AB0F9B /* DSArticle.swift in Sources */,
 				1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */,
 				1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */,
+				1128C6692BAA60BD00AB0F9B /* ArticleListView.swift in Sources */,
 				1128C6612BAA36F200AB0F9B /* DSCategory.swift in Sources */,
 				1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */,
 				1128C6592BA966C900AB0F9B /* DSSavedViewController.swift in Sources */,
 				1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */,
+				1128C6672BAA608A00AB0F9B /* ArticlesListViewViewModel.swift in Sources */,
 				1128C6572BA966A600AB0F9B /* DSDailyViewController.swift in Sources */,
 				1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */,
+				1117092B2BABC5B100CEF7DE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

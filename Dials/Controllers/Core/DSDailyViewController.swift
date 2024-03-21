@@ -15,14 +15,10 @@ final class DSDailyViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Daily"
         
-        
-        let request = DSRequest(endpoint: .articles)
-        print(request.url)
-        
-        DSService.shared.execute(request, expecting: DSArticle.self) { result in
+        DSService.shared.execute(.articlesRequests, expecting: DSGetArticlesResponse.self) { result in
             switch result {
-            case .success:
-                break
+            case .success(let model):
+                print(String(describing: model))
             case .failure(let error):
                 print(String(describing: error))
             }

@@ -62,3 +62,7 @@ final class DSRequest {
         self.queryParameters = queryParameters
     }
 }
+
+extension DSRequest {
+    static let articlesRequests = DSRequest(endpoint: .articles)
+}

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1117092B2BABC5B100CEF7DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092A2BABC5B100CEF7DE /* Extensions.swift */; };
 		1117092D2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092C2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift */; };
+		1117092F2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */; };
 		1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6382BA963AE00AB0F9B /* AppDelegate.swift */; };
 		1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */; };
 		1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63C2BA963AE00AB0F9B /* DSTabBarController.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		1117092A2BABC5B100CEF7DE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1117092C2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		1128C6352BA963AE00AB0F9B /* Dials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1128C6382BA963AE00AB0F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				1128C6662BAA608A00AB0F9B /* DSArticlesListViewViewModel.swift */,
+				1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */,
 				1128C6592BA966C900AB0F9B /* DSSavedViewController.swift in Sources */,
 				1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */,
+				1117092F2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift in Sources */,
 				1128C6672BAA608A00AB0F9B /* DSArticlesListViewViewModel.swift in Sources */,
 				1128C6572BA966A600AB0F9B /* DSDailyViewController.swift in Sources */,
 				1117092D2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift in Sources */,

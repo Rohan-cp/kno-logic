@@ -26,7 +26,12 @@ extension DSArticlesDetailViewViewModel: UICollectionViewDataSource, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DSArticleCollectionViewCell.cellIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DSArticleCollectionViewCell.cellIdentifier, for: indexPath
+        ) as? DSArticleCollectionViewCell else {
+            fatalError("Unsupported cell")
+        }
+        let viewModel = DSArticleCollectionViewCellViewModel(title: "Dormio: Interfacing with dreams", author: "MIT Media Labs", imageUrl: nil)
+        cell.configure(with: viewModel)
         return cell
     }
     

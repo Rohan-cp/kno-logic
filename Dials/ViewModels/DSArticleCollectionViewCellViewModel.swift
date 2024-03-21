@@ -9,16 +9,16 @@ import Foundation
 
 final class DSArticleCollectionViewCellViewModel {
     let title: String
-    let description: String
+    let author: String
     let imageUrl: URL?
 
     init(
         title: String,
-        description: String,
+        author: String,
         imageUrl: URL?
     ) {
         self.title = title
-        self.description = description
+        self.author = author
         self.imageUrl = imageUrl
     }
     

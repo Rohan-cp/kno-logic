@@ -18,7 +18,7 @@ final class DSArticleListView: UIView {
     
     public weak var delegate: DSArticleListViewDelegate?
     
-    private let viewModel = DSArticlesDetailViewViewModel()
+    private let viewModel = DSArticlesListViewViewModel()
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
@@ -83,7 +83,7 @@ extension DSArticleListView: DSArticlesListViewViewModelDelegate {
         delegate?.dsArticleListView(self, didSelectArticle: article)
     }
     
-    func didLoadIntitialAricles() {
+    func didLoadInitialArticles() {
         spinner.stopAnimating()
         collectionView.reloadData() // initial fetch
         

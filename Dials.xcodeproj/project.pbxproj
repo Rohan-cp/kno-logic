@@ -14,6 +14,9 @@
 		111709362BAD731700CEF7DE /* DSArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709352BAD731700CEF7DE /* DSArticleDetailView.swift */; };
 		111709382BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */; };
 		1117093A2BAD795C00CEF7DE /* DSImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709392BAD795C00CEF7DE /* DSImageLoader.swift */; };
+		1117093C2BAD81C900CEF7DE /* DSArticleCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117093B2BAD81C900CEF7DE /* DSArticleCarouselView.swift */; };
+		111709422BAD84C400CEF7DE /* DSArticlesCarouselViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709412BAD84C400CEF7DE /* DSArticlesCarouselViewViewModel.swift */; };
+		111709442BAD867000CEF7DE /* DSArticleCarouselViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709432BAD867000CEF7DE /* DSArticleCarouselViewCell.swift */; };
 		1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6382BA963AE00AB0F9B /* AppDelegate.swift */; };
 		1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */; };
 		1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63C2BA963AE00AB0F9B /* DSTabBarController.swift */; };
@@ -39,6 +42,9 @@
 		111709352BAD731700CEF7DE /* DSArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailView.swift; sourceTree = "<group>"; };
 		111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailViewViewModel.swift; sourceTree = "<group>"; };
 		111709392BAD795C00CEF7DE /* DSImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSImageLoader.swift; sourceTree = "<group>"; };
+		1117093B2BAD81C900CEF7DE /* DSArticleCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleCarouselView.swift; sourceTree = "<group>"; };
+		111709412BAD84C400CEF7DE /* DSArticlesCarouselViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticlesCarouselViewViewModel.swift; sourceTree = "<group>"; };
+		111709432BAD867000CEF7DE /* DSArticleCarouselViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleCarouselViewCell.swift; sourceTree = "<group>"; };
 		1128C6352BA963AE00AB0F9B /* Dials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1128C6382BA963AE00AB0F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				1128C6682BAA60BD00AB0F9B /* DSArticleListView.swift */,
 				1117092C2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift */,
 				111709352BAD731700CEF7DE /* DSArticleDetailView.swift */,
+				1117093B2BAD81C900CEF7DE /* DSArticleCarouselView.swift */,
+				111709432BAD867000CEF7DE /* DSArticleCarouselViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				1128C6662BAA608A00AB0F9B /* DSArticlesListViewViewModel.swift */,
 				1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */,
 				111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */,
+				111709412BAD84C400CEF7DE /* DSArticlesCarouselViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 				1117093A2BAD795C00CEF7DE /* DSImageLoader.swift in Sources */,
 				1128C6542BA965D700AB0F9B /* DSArticle.swift in Sources */,
 				1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */,
+				111709422BAD84C400CEF7DE /* DSArticlesCarouselViewViewModel.swift in Sources */,
 				1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */,
 				1128C6692BAA60BD00AB0F9B /* DSArticleListView.swift in Sources */,
 				1128C6612BAA36F200AB0F9B /* DSCategory.swift in Sources */,
@@ -288,6 +298,8 @@
 				1117092F2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift in Sources */,
 				1128C6672BAA608A00AB0F9B /* DSArticlesListViewViewModel.swift in Sources */,
 				111709322BAD728D00CEF7DE /* DSArticleDetailViewController.swift in Sources */,
+				1117093C2BAD81C900CEF7DE /* DSArticleCarouselView.swift in Sources */,
+				111709442BAD867000CEF7DE /* DSArticleCarouselViewCell.swift in Sources */,
 				1128C6572BA966A600AB0F9B /* DSDailyViewController.swift in Sources */,
 				1117092D2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift in Sources */,
 				1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */,

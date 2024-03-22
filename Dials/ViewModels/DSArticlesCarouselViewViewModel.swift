@@ -1,20 +1,20 @@
 //
-//  ArticlesListViewModel.swift
+//  DSArticlesCarouselViewViewModel.swift
 //  Dials
 //
-//  Created by Rohan Prashanth on 19/03/24.
+//  Created by Rohan Prashanth on 22/03/24.
 //
 
 import UIKit
 
-protocol DSArticlesListViewViewModelDelegate: AnyObject {
+protocol DSArticleCarouselViewViewModelDelegate: AnyObject {
     func didLoadInitialArticles()
     func didSelectArticle(_ article: DSArticle)
 }
 
-final class DSArticlesListViewViewModel: NSObject {
+final class DSArticleCarouselViewViewModel: NSObject {
     
-    public weak var delegate: DSArticlesListViewViewModelDelegate?
+    public weak var delegate: DSArticleCarouselViewViewModelDelegate?
     
     private var articles: [DSArticle] = [] {
         didSet {
@@ -24,14 +24,14 @@ final class DSArticlesListViewViewModel: NSObject {
                     author: article.author,
                     previewImageUrl: URL(string: article.previewImageUrl)
                 )
-                cellViewModels.append(viewModel)
+                carouselCellViewModels.append(viewModel)
             }
         }
     }
     
-    private var cellViewModels: [DSArticleCollectionViewCellViewModel] = []
+    private var carouselCellViewModels: [DSArticleCollectionViewCellViewModel] = []
     
-    public func fetchSavedArticles() {
+    public func fetchDailyDigestArticles() {
         DSService.shared.execute(.articlesRequests, expecting: DSGetArticlesResponse.self) { [weak self] result in
             switch result {
             case .success(let responseModel):
@@ -46,22 +46,20 @@ final class DSArticlesListViewViewModel: NSObject {
             }
         }
     }
-    
-
 }
 
-extension DSArticlesListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension DSArticleCarouselViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellViewModels.count
+        return carouselCellViewModels.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DSArticleCollectionViewCell.cellIdentifier, for: indexPath
-        ) as? DSArticleCollectionViewCell else {
+    func collectionView(_ carouselView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = carouselView.dequeueReusableCell(withReuseIdentifier: DSArticleCarouselViewCell.cellIdentifier, for: indexPath
+        ) as? DSArticleCarouselViewCell else {
             fatalError("Unsupported cell")
         }
         
-        let viewModel = cellViewModels[indexPath.row]
+        let viewModel = carouselCellViewModels[indexPath.row]
         cell.configure(with: viewModel)
         return cell
     }

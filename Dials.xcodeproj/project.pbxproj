@@ -13,6 +13,7 @@
 		111709322BAD728D00CEF7DE /* DSArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709312BAD728D00CEF7DE /* DSArticleDetailViewController.swift */; };
 		111709362BAD731700CEF7DE /* DSArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709352BAD731700CEF7DE /* DSArticleDetailView.swift */; };
 		111709382BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */; };
+		1117093A2BAD795C00CEF7DE /* DSImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709392BAD795C00CEF7DE /* DSImageLoader.swift */; };
 		1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6382BA963AE00AB0F9B /* AppDelegate.swift */; };
 		1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */; };
 		1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63C2BA963AE00AB0F9B /* DSTabBarController.swift */; };
@@ -37,6 +38,7 @@
 		111709312BAD728D00CEF7DE /* DSArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailViewController.swift; sourceTree = "<group>"; };
 		111709352BAD731700CEF7DE /* DSArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailView.swift; sourceTree = "<group>"; };
 		111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailViewViewModel.swift; sourceTree = "<group>"; };
+		111709392BAD795C00CEF7DE /* DSImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSImageLoader.swift; sourceTree = "<group>"; };
 		1128C6352BA963AE00AB0F9B /* Dials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1128C6382BA963AE00AB0F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		1128C6512BA9655200AB0F9B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				111709392BAD795C00CEF7DE /* DSImageLoader.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */,
 				1128C6652BAA5CDA00AB0F9B /* DSGetArticlesResponse.swift in Sources */,
+				1117093A2BAD795C00CEF7DE /* DSImageLoader.swift in Sources */,
 				1128C6542BA965D700AB0F9B /* DSArticle.swift in Sources */,
 				1128C65D2BA9845500AB0F9B /* DSRequest.swift in Sources */,
 				1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */,

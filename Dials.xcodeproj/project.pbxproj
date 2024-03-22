@@ -10,6 +10,9 @@
 		1117092B2BABC5B100CEF7DE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092A2BABC5B100CEF7DE /* Extensions.swift */; };
 		1117092D2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092C2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift */; };
 		1117092F2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */; };
+		111709322BAD728D00CEF7DE /* DSArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709312BAD728D00CEF7DE /* DSArticleDetailViewController.swift */; };
+		111709362BAD731700CEF7DE /* DSArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709352BAD731700CEF7DE /* DSArticleDetailView.swift */; };
+		111709382BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */; };
 		1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C6382BA963AE00AB0F9B /* AppDelegate.swift */; };
 		1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */; };
 		1128C63D2BA963AE00AB0F9B /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1128C63C2BA963AE00AB0F9B /* DSTabBarController.swift */; };
@@ -31,6 +34,9 @@
 		1117092A2BABC5B100CEF7DE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1117092C2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 		1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		111709312BAD728D00CEF7DE /* DSArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailViewController.swift; sourceTree = "<group>"; };
+		111709352BAD731700CEF7DE /* DSArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailView.swift; sourceTree = "<group>"; };
+		111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSArticleDetailViewViewModel.swift; sourceTree = "<group>"; };
 		1128C6352BA963AE00AB0F9B /* Dials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1128C6382BA963AE00AB0F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1128C63A2BA963AE00AB0F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111709302BAD721F00CEF7DE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				111709312BAD728D00CEF7DE /* DSArticleDetailViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		1128C62C2BA963AE00AB0F9B = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +121,7 @@
 			children = (
 				1128C6682BAA60BD00AB0F9B /* DSArticleListView.swift */,
 				1117092C2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift */,
+				111709352BAD731700CEF7DE /* DSArticleDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 		1128C64F2BA9653000AB0F9B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				111709302BAD721F00CEF7DE /* Other */,
 				1128C6552BA9664500AB0F9B /* Core */,
 			);
 			path = Controllers;
@@ -135,6 +151,7 @@
 			children = (
 				1128C6662BAA608A00AB0F9B /* DSArticlesListViewViewModel.swift */,
 				1117092E2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift */,
+				111709372BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -260,15 +277,18 @@
 				1128C65B2BA9843F00AB0F9B /* DSService.swift in Sources */,
 				1128C6692BAA60BD00AB0F9B /* DSArticleListView.swift in Sources */,
 				1128C6612BAA36F200AB0F9B /* DSCategory.swift in Sources */,
+				111709362BAD731700CEF7DE /* DSArticleDetailView.swift in Sources */,
 				1128C6392BA963AE00AB0F9B /* AppDelegate.swift in Sources */,
 				1128C6592BA966C900AB0F9B /* DSSavedViewController.swift in Sources */,
 				1128C63B2BA963AE00AB0F9B /* SceneDelegate.swift in Sources */,
 				1117092F2BABE32A00CEF7DE /* DSArticleCollectionViewCellViewModel.swift in Sources */,
 				1128C6672BAA608A00AB0F9B /* DSArticlesListViewViewModel.swift in Sources */,
+				111709322BAD728D00CEF7DE /* DSArticleDetailViewController.swift in Sources */,
 				1128C6572BA966A600AB0F9B /* DSDailyViewController.swift in Sources */,
 				1117092D2BABE1EC00CEF7DE /* DSArticleCollectionViewCell.swift in Sources */,
 				1128C65F2BA984C600AB0F9B /* DSEndpoint.swift in Sources */,
 				1117092B2BABC5B100CEF7DE /* Extensions.swift in Sources */,
+				111709382BAD738000CEF7DE /* DSArticleDetailViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

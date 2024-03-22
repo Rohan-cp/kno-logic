@@ -8,7 +8,7 @@
 import UIKit
 
 // Controller to show saved articles
-final class DSSavedViewController: UIViewController {
+final class DSSavedViewController: UIViewController, DSArticleListViewDelegate {
     
     private let articleListView = DSArticleListView()
 
@@ -16,6 +16,11 @@ final class DSSavedViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Saved"
+        setUpView()
+    }
+    
+    private func setUpView() {
+        articleListView.delegate = self
         view.addSubview(articleListView)
         NSLayoutConstraint.activate([
             articleListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -25,4 +30,12 @@ final class DSSavedViewController: UIViewController {
         ])
     }
     
+    // MARK: - DSArticleListViewDelegate
+    
+    func dsArticleListView(_ articleListView: DSArticleListView, didSelectArticle article: DSArticle) {
+       // Open detail controller for that article
+        let viewModel = DSArticleDetailViewViewModel(article: article)
+        let detailVC = DSArticleDetailViewController(viewModel: viewModel)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }

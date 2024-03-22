@@ -7,7 +7,16 @@
 
 import UIKit
 
+protocol DSArticleListViewDelegate: AnyObject {
+    func dsArticleListView(
+        _ articleListView: DSArticleListView,
+        didSelectArticle article: DSArticle
+    )
+}
+
 final class DSArticleListView: UIView {
+    
+    public weak var delegate: DSArticleListViewDelegate?
     
     private let viewModel = DSArticlesDetailViewViewModel()
     
@@ -71,7 +80,7 @@ final class DSArticleListView: UIView {
 
 extension DSArticleListView: DSArticlesListViewViewModelDelegate {
     func didSelectArticle(_ article: DSArticle) {
-        <#code#>
+        delegate?.dsArticleListView(self, didSelectArticle: article)
     }
     
     func didLoadIntitialAricles() {

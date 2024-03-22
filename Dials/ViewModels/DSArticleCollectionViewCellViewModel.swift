@@ -22,6 +22,10 @@ final class DSArticleCollectionViewCellViewModel {
         self.previewImageUrl = previewImageUrl
     }
     
+    public var authorText: String {
+        return "By \(author)"
+    }
+    
     public func fetchImage(completion: @escaping (Result<Data, Error>) -> Void) {
         // TODO: abstract to image manager
         guard let url = previewImageUrl else {

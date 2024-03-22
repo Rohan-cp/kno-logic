@@ -9,6 +9,7 @@ import UIKit
 
 protocol DSArticlesListViewViewModelDelegate: AnyObject {
     func didLoadIntitialAricles()
+    func didSelectArticle(_ article: DSArticle)
 }
 
 final class DSArticlesDetailViewViewModel: NSObject {
@@ -69,5 +70,11 @@ extension DSArticlesDetailViewViewModel: UICollectionViewDataSource, UICollectio
         let bounds = UIScreen.main.bounds
         let width = bounds.width - 30
         return CGSize(width: width, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let article = articles[indexPath.row]
+        delegate?.didSelectArticle(article)
     }
 }

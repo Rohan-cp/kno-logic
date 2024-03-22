@@ -21,6 +21,7 @@ final class DSArticleListView: UIView {
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+        layout.minimumLineSpacing = 25
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.isHidden = true
@@ -69,6 +70,10 @@ final class DSArticleListView: UIView {
 }
 
 extension DSArticleListView: DSArticlesListViewViewModelDelegate {
+    func didSelectArticle(_ article: DSArticle) {
+        <#code#>
+    }
+    
     func didLoadIntitialAricles() {
         spinner.stopAnimating()
         collectionView.reloadData() // initial fetch

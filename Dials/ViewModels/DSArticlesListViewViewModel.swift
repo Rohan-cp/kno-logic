@@ -7,22 +7,51 @@
 
 import UIKit
 
+protocol DSArticlesListViewViewModelDelegate: AnyObject {
+    func didLoadIntitialAricles()
+}
+
 final class DSArticlesDetailViewViewModel: NSObject {
-    func fetchSavedArticles() {
-        DSService.shared.execute(.articlesRequests, expecting: DSGetArticlesResponse.self) { result in
+    
+    public weak var delegate: DSArticlesListViewViewModelDelegate?
+    
+    private var articles: [DSArticle] = [] {
+        didSet {
+            for article in articles {
+                let viewModel = DSArticleCollectionViewCellViewModel(
+                    title: article.title,
+                    author: article.author,
+                    previewImageUrl: URL(string: article.previewImageUrl)
+                )
+                cellViewModels.append(viewModel)
+            }
+        }
+    }
+    
+    private var cellViewModels: [DSArticleCollectionViewCellViewModel] = []
+    
+    public func fetchSavedArticles() {
+        DSService.shared.execute(.articlesRequests, expecting: DSGetArticlesResponse.self) { [weak self] result in
             switch result {
-            case .success(let model):
-                print(String(describing: model))
+            case .success(let responseModel):
+                let response = responseModel
+                self?.articles = response.articles
+                DispatchQueue.main.async {
+                    self?.delegate?.didLoadIntitialAricles()
+                }
+                print(String(describing: response))
             case .failure(let error):
                 print(String(describing: error))
             }
         }
     }
+    
+
 }
 
 extension DSArticlesDetailViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return cellViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -30,7 +59,8 @@ extension DSArticlesDetailViewViewModel: UICollectionViewDataSource, UICollectio
         ) as? DSArticleCollectionViewCell else {
             fatalError("Unsupported cell")
         }
-        let viewModel = DSArticleCollectionViewCellViewModel(title: "Dormio: Interfacing with dreams", author: "MIT Media Labs", imageUrl: nil)
+        
+        let viewModel = cellViewModels[indexPath.row]
         cell.configure(with: viewModel)
         return cell
     }

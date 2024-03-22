@@ -12,7 +12,7 @@ final class DSArticleCollectionViewCell: UICollectionViewCell {
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -77,11 +77,6 @@ final class DSArticleCollectionViewCell: UICollectionViewCell {
             authorLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -3),
             */
         ])
-        
-        print("enddd")
-        imageView.backgroundColor = .green
-        titleLabel.backgroundColor = .red
-        authorLabel.backgroundColor = .blue
         
         /*
          | Image      Title

@@ -10,10 +10,9 @@ import Foundation
 struct DSArticle: Codable {
     let title: String
     let author: String
-    let category: DSCategory
     let date: String
     let description: String
-    let link: String
-    let imageUrl: String
+    let sourceLink: String
+    let previewImageUrl: String
 }
 

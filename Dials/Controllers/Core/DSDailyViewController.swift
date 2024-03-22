@@ -18,7 +18,7 @@ final class DSDailyViewController: UIViewController {
         DSService.shared.execute(.articlesRequests, expecting: DSGetArticlesResponse.self) { result in
             switch result {
             case .success(let model):
-                print(String(describing: model))
+               print()
             case .failure(let error):
                 print(String(describing: error))
             }

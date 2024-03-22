@@ -10,21 +10,21 @@ import Foundation
 final class DSArticleCollectionViewCellViewModel {
     let title: String
     let author: String
-    let imageUrl: URL?
+    let previewImageUrl: URL?
 
     init(
         title: String,
         author: String,
-        imageUrl: URL?
+        previewImageUrl: URL?
     ) {
         self.title = title
         self.author = author
-        self.imageUrl = imageUrl
+        self.previewImageUrl = previewImageUrl
     }
     
     public func fetchImage(completion: @escaping (Result<Data, Error>) -> Void) {
         // TODO: abstract to image manager
-        guard let url = imageUrl else {
+        guard let url = previewImageUrl else {
             completion(.failure(URLError(.badURL)))
             return
         }

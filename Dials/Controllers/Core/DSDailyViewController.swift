@@ -15,7 +15,7 @@ final class DSDailyViewController: UIViewController, DSArticleCarouselViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = UIColor(red: 0x2E / 255.0, green: 0x2F / 255.0, blue: 0x41 / 255.0, alpha: 1.0)
         title = "Daily"
         setUpView()
     }

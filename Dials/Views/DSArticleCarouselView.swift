@@ -34,6 +34,7 @@ final class DSArticleCarouselView: UIView, DSArticlesListViewViewModelDelegate {
         let carouselView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         carouselView.isHidden = true
         carouselView.alpha = 0
+        carouselView.backgroundColor = UIColor(red: 0x2E / 255.0, green: 0x2F / 255.0, blue: 0x41 / 255.0, alpha: 1.0)
         carouselView.translatesAutoresizingMaskIntoConstraints = false
         carouselView.register(DSArticleCarouselViewCell.self, forCellWithReuseIdentifier: DSArticleCarouselViewCell.cellIdentifier)
         return carouselView

@@ -22,6 +22,7 @@ final class DSArticleCarouselViewViewModel: NSObject {
                 let viewModel = DSArticleCollectionViewCellViewModel(
                     title: article.title,
                     author: article.author,
+                    categories: article.categories,
                     previewImageUrl: URL(string: article.previewImageUrl)
                 )
                 carouselCellViewModels.append(viewModel)
@@ -66,8 +67,9 @@ extension DSArticleCarouselViewViewModel: UICollectionViewDataSource, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let bounds = UIScreen.main.bounds
-        let width = bounds.width - 30
-        return CGSize(width: width, height: 100)
+        let width = bounds.width - 50
+        let height = bounds.height - 350
+        return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

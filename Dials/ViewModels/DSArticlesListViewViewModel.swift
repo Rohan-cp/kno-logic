@@ -22,6 +22,7 @@ final class DSArticlesListViewViewModel: NSObject {
                 let viewModel = DSArticleCollectionViewCellViewModel(
                     title: article.title,
                     author: article.author,
+                    categories: article.categories,
                     previewImageUrl: URL(string: article.previewImageUrl)
                 )
                 cellViewModels.append(viewModel)

@@ -11,6 +11,7 @@ struct DSArticle: Codable {
     let title: String
     let author: String
     let date: String
+    let categories: [DSCategory]
     let description: String
     let sourceLink: String
     let previewImageUrl: String

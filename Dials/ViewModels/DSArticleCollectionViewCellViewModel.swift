@@ -10,15 +10,18 @@ import Foundation
 final class DSArticleCollectionViewCellViewModel {
     let title: String
     let author: String
+    let categories: [DSCategory]
     let previewImageUrl: URL?
 
     init(
         title: String,
         author: String,
+        categories: [DSCategory],
         previewImageUrl: URL?
     ) {
         self.title = title
         self.author = author
+        self.categories = categories
         self.previewImageUrl = previewImageUrl
     }
     

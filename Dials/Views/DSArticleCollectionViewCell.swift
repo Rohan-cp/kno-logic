@@ -60,8 +60,7 @@ final class DSArticleCollectionViewCell: UICollectionViewCell {
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: -7),
             titleLabel.widthAnchor.constraint(equalToConstant: 242),
             authorLabel.heightAnchor.constraint(equalToConstant: 30),
-            authorLabel.widthAnchor.constraint(equalToConstant: 140),
-
+            authorLabel.widthAnchor.constraint(equalToConstant: 100),
             
             titleLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
             authorLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
@@ -101,6 +100,7 @@ final class DSArticleCollectionViewCell: UICollectionViewCell {
     public func configure(with viewModel: DSArticleCollectionViewCellViewModel) {
         titleLabel.text = viewModel.title
         authorLabel.text = viewModel.authorText
+        
         viewModel.fetchImage { [weak self] result in
             switch result {
             case .success(let data):
